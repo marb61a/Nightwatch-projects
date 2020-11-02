@@ -1,0 +1,6 @@
+Nightwatch Js
+    - https://nightwatchjs.org/
+    - Nightwatch JS is an E2E testing framework written in Node JS
+    - Nightwatch and Chromedriver are needed and can be installed via NPM
+        - npm install nightwatch chromedriver
+    - 
