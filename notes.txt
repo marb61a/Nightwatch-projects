@@ -3,4 +3,19 @@ Nightwatch Js
     - Nightwatch JS is an E2E testing framework written in Node JS
     - Nightwatch and Chromedriver are needed and can be installed via NPM
         - npm install nightwatch chromedriver
-    - 
+Setup Nightwatch
+    - Nightwatch requires having a nightwatch.json configuration file
+    - This file will have the base configuration
+    - On some systems the base configuration will have an error
+        - The following line will need to be added for the server path declaration 
+        - 'server_path': require('chromedriver').path
+        - There is also a need to add a nightwatch.conf.js file in some instances
+        - This seems to be on Windows platform and the js file should be in the root of the project
+
+Test Runners
+    - Nightwatch has its own test runner and assertion library 
+    - Other frameworks have a lot of dependencies that you will have to install and tie together
+    - A specific test can also be ran
+        - ./node_modules/.bin/nightwatch -t ./tests/<test_name>
+        - In this case -> ./node_modules/.bin/nightwatch -t ./tests/nightwatch.basic.test.js
+    -
