@@ -26,4 +26,17 @@ Test Runners
         - Nightwatch gives users the option to use the Mocha BDD (Behavior Driven Development) interface to write your tests using their default test runner
         - Since version 1.3, Nightwatch has created their own Mocha interface that users can use so they would no longer have to create a config file 
         - nightwatch_mocha.json file is needed to be able to add test_runner to
+
+Elements
+Finding Elements
+    - Nightwatch provides many different ways to find elements
+    - The base way is the element function
+    - The .elements() function searches for multiple elements and returns the web element objects for those
+        - This is the same as element but for multiple elements instead of singular
+
+Element Interaction
+    - There are a few methods that can be used for element interaction
+        - clearValue -> this clears a text field that maybe under test
+        - click, keys, moveToElement, setValue
     -
+
