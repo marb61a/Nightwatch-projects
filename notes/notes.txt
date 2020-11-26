@@ -31,6 +31,7 @@ Elements
 Finding Elements
     - Nightwatch provides many different ways to find elements
     - The base way is the element function
+        - element returns a web element JSON object
     - The .elements() function searches for multiple elements and returns the web element objects for those
         - This is the same as element but for multiple elements instead of singular
 
@@ -44,5 +45,24 @@ Element Interaction
 Element State
     - Looking at 3 main methods
         - getText(), getValue(), isVisible()
-    - 
+    - getText() returns the visible text for an element
+        - It requires a selector and a callback as parameters
+        - This will return an object unless just the value is returned
+    - getValue() is very similar to getText()
+        - getValue works for form elements though and getText does not
+        - This means that getValue will be needed for getting values that are within the form fields
+        - setValue can be used to set a value in the field being tested if necessary
+    - isVisible() will just determine if an element is visible or not
+        - It will return either a true or false
+        - If the element is visible there will a true returned
 
+Navigation
+    - init() function is an alias to the URL command that is used to navigate to a URL
+        - In the nightwatch.json file there can be a launch url specified
+        - This is added under default and is the base url for navigating to
+    - url() is used to navigate to a specific URL
+    - back() and forward()
+        - As to be expected this navigate backwards and forwards in the browser
+    - getTitle() returns the title of the current page
+    - refresh()
+    - 
