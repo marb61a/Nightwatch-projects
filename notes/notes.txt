@@ -64,5 +64,20 @@ Navigation
     - back() and forward()
         - As to be expected this navigate backwards and forwards in the browser
     - getTitle() returns the title of the current page
-    - refresh()
-    - 
+    - refresh() basically refreshes the current page
+        - This can be useful when doing something on a page that needs to be refreshed in order to be shown
+    - urlHash() this adds a specified hashtag to our current launch URL
+        - The value should be seen in the url when test is ran
+
+Actions
+User Actions & Prompts
+    - keys() this method sends a sequence of strokes to an active element
+        - Different keys can be referenced through the Nightwatch client.Keys object
+            - This is an uppercase K
+        - There are some predefined keys based on the W3C WebDriver draft spec
+        - An issue however is that Nightwatch, in their documentation, did not actually give a list of the available keys
+        - The way to see keys is to create a file that will send the Keys object to the console
+            - console.log(JSON.stringify(client.Keys, null, '\t'))
+        - This may be added to documentation in the future
+    -
+
