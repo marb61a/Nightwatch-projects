@@ -99,5 +99,26 @@ Navigation
 
 Alerts
     - There are methods provided by Nightwatch for interacting with Alerts
-    - 
+        - acceptAlert() which accepts the current display alert
+        - dismissAlert() which is the opposite of acceptAlert()
+        - There is also getAlertText() and setAlertText()
+
+Asserts
+Expect and Assert
+    - There are two built-in Assertion libraries in Nightwatch
+        - These are Assert and Expect
+    - The Expect library is based on the Chai Assertion Library
+        - https://www.chaijs.com/api/bdd/
+        - This provides a lot of flexibility and capabilities that the Assertion library does not
+        - This is because the Assertion library only extends the Node.js assert module, which only has limited assertion
+    - One of the benefits of using the Expect API is being able to use language chains which improves readability of assertions
+        - There are multiple chains that can be used -> to, be, is, and , has, at, does and of to name a few
+        - This chained language does not affect the assertions other than better readability
+    - There are 2 namespaces in the Assert library
+        - Assert and Verify, either of which can be used
+        - These can be used interchangably but there is a slight difference
+            - If an assertion fails while using the assert, it will stop the test case and ignore all other assertions
+            - On the other hand if using Verify it will log the failed assertion and execute the others
+    - Choosing which to use can be a matter of personal preference
+    -
 
