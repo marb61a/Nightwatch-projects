@@ -79,5 +79,25 @@ User Actions & Prompts
         - The way to see keys is to create a file that will send the Keys object to the console
             - console.log(JSON.stringify(client.Keys, null, '\t'))
         - This may be added to documentation in the future
-    -
+
+Mouse Interaction
+    - This will make use of the .mouseButtonClick() command
+    - This can be either right or left click or double click or even hold the button down
+    - Using moveTo will need screen coordinates
+
+Navigation
+    - There are several different navigation methods available in Nightwatch
+        - get the window position (getWindowPosition)
+        - get the window size (getWindowSize)
+        - maximize the window (maximizeWindow)
+        - fullscreen window (fullscreenWindow)
+        - open new window (openNewWindow)
+        - get a window handle (windowHandle)
+        - switch between windows (switchWindow)
+    - When using the switchWindow command the results are in an array
+        - To switch to the second window it will be window[1] as an array starts at 0
+
+Alerts
+    - There are methods provided by Nightwatch for interacting with Alerts
+    - 
 
