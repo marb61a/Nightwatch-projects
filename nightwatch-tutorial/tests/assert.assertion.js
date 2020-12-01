@@ -23,6 +23,14 @@ module.exports = {
 
     "Should assert attribute contains expected value": (client) => {
         client.verify.attributeContains('#et_pb_contact_name_0', 'placeholder', "Name");
+    },
+
+    "Should assert containing text": (client) => {
+        client.verify.containstext('button[name="et_builder_submit_button"]:nth-child(1)', "Submit");
+    },
+
+    "Should assert CSS class present": (client) => {
+        client.verify.cssClassPresent('#et_pb_contact_name_0', 'input');
     }
 
 }
