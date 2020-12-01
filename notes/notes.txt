@@ -120,5 +120,26 @@ Expect and Assert
             - If an assertion fails while using the assert, it will stop the test case and ignore all other assertions
             - On the other hand if using Verify it will log the failed assertion and execute the others
     - Choosing which to use can be a matter of personal preference
-    -
 
+Assert 
+    - This will use the Assert library
+    - value() and valueContains() differ slightly
+        - When comparing expected values if value() is used then it must match
+        - Using valueContains() needs only a partial match eg Ste from Stephen
+    - urlEquals() saves writing a method to get and compare a url
+    - assert.title() which will assert the title of our current page by using the assert library
+!!  - Ensure that casing of letters is correct
+    - assert.attributeContains() which checks if the given attribute of an element contains the expected value
+    - assert.containsText() will  check if an element contains text
+        - This include checking the text on a button
+    - assert.cssClassPresent() verifies whether a CSS class is present or not
+        - This can be very useful where there are different element states
+        - For example something may be activated by a class and there is a difference which needs to be verified
+
+Expect
+    - There are 3 methods which should be remembered
+        - .equal(), .contain(), or .match()
+        - The first 2 are used in many test cases
+        - match() can be used to verify a certain pattern
+        - These methods will perform assertions on a specific target on the current element
+    - 
