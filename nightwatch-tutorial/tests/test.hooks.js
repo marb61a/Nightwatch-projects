@@ -17,5 +17,13 @@ module.exports = {
     // This will be run after each test within the suite
     afterEach: (client) => {
         console.log('Test completed');
+    },
+
+    "Should verify page title": (client) => {
+        client.expect.title().to.contains('Filling Out');
+    },
+
+    "Should verify page url" : (client) => {
+        client.expect.url().which.contains('filling-out-forms');
     }
 };

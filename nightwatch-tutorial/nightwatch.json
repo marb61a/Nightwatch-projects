@@ -1,5 +1,7 @@
 {
     "src_folders": ["tests"],
+    "detailed_output": true,
+    "globals_path": "globals/globalModule",
     "webdriver": {
         "start_process": true,
         "server_path": "node_modules/.bin/chromedriver",
