@@ -142,4 +142,25 @@ Expect
         - The first 2 are used in many test cases
         - match() can be used to verify a certain pattern
         - These methods will perform assertions on a specific target on the current element
-    - 
+    - Also available in the Expect Library are startsWith() and endsWith()
+    - The not() method will negate any assertions
+    - Using the before() and after() methods will add retrying capabilities
+        - The time involved will be specified in milliseconds
+    - There are many things that can be checked including
+        - Check for element visibility
+        - If an element is present, or if it's enabled
+        - If an element is active
+        - It there is an attribute present and if it has a particular value
+        - What the element type is using a() or an()
+    - There can also be a count of the elements using element()
+
+Tests and Global Hooks
+    - Nightwatch provides the standard before, after, beforeEach, and afterEach hooks to be used in tests if needed
+    - Most testing frameworks, if not all, have hooks that can be used
+    - The before() is run before the suite gets executed
+    - The after() is the opposite of the before() method and runs after suite execution
+    - The beforeEach() is ran prior to each test in the suite
+    - The afterEach() is ran after each suite test
+    - Nightwatch makes the same set of hooks per test suite available globally
+        - These hooks are outside the scope of a test
+    -
