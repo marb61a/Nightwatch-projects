@@ -163,4 +163,24 @@ Tests and Global Hooks
     - The afterEach() is ran after each suite test
     - Nightwatch makes the same set of hooks per test suite available globally
         - These hooks are outside the scope of a test
-    -
+    - In order to use the global hooks there needs to be a globals path defined in nightwatch.json
+    - Global hooks expect a callback function
+        - The global before() hook can be beneficial for things like starting a server prior to test execution
+        - The global after() hook is executed at session end and is the same as closing the selenium session
+    - The beforeEach and afterEach are executed before our test suite, and it has access to the browser instance
+
+Tests
+Page Object
+    - Transforming existing tests to make them use the Page Object Model
+        - This is a way of making code reusable and avoiding repetition
+        - It also makes test suites much easier to maintain
+    - To use page objects it is necessary to specify a page_objects_path within the nightwatch.json file
+        - "page_objects_path": [ "pages" ] where pages is the folder in the project root
+    - The basic structure of a page object in Nightwatch should include certain items
+        - elements, which is an object
+        - commands, which is an array
+        - url, which can be a function or a string
+            - The page object can resolve this string or a function by using the object.Navigate function
+    - Elements can be defined outside of modules
+        - This will be down to the personal preference of the tester
+    - 
