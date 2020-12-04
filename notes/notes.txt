@@ -174,6 +174,7 @@ Page Object
     - Transforming existing tests to make them use the Page Object Model
         - This is a way of making code reusable and avoiding repetition
         - It also makes test suites much easier to maintain
+        - Page object does make it very easy to encapsulate the different Nightwatch methods
     - To use page objects it is necessary to specify a page_objects_path within the nightwatch.json file
         - "page_objects_path": [ "pages" ] where pages is the folder in the project root
     - The basic structure of a page object in Nightwatch should include certain items
@@ -183,4 +184,23 @@ Page Object
             - The page object can resolve this string or a function by using the object.Navigate function
     - Elements can be defined outside of modules
         - This will be down to the personal preference of the tester
+    - There are a couple of ways of defining elements
+        - Shorthand and Longhand
+        - Shorthand would just be the selector name
+        - Longhand would be an object with 2 keys, a selector and a locator strategy
+        - XPath can also be used to define an element
+        - By default, Nightwatch uses css_selector as the locateStrategy
+        - This is why the Shorthand version works as explicit definition of locator strategy is not needed
+    - Within the page object, we can access the elements by using the @ sign
+        - For example @leftFormName, and Nightwatch will automatically resolve this name to this selector
+    - Commands will be defined in an object
+        - These objects can be contained in an array
+    - Sections is where there are different sections defined within the page object
+        - Elements and commands can be defined in sections
+        - These will only be in scope in the section where they are declared
+        - To access the section it will have to be defined in the test file
+!!  - Remove unnecessary page refreshes as they may cause failures
+
+Mocha Data Driven
+    - Writing a test using  Mocha test runner and also using the page object
     - 
