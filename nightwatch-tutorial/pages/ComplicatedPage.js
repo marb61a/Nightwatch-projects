@@ -5,6 +5,7 @@ const elements = {
 
 const commands = [
     {
+        // Enters the searchTerm into the search field and then clicks on the search button
         search(searchTerm){
             return this
                 .setValue('@txtSearch', searchTerm)
