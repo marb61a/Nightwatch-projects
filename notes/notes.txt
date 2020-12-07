@@ -203,4 +203,24 @@ Page Object
 
 Mocha Data Driven
     - Writing a test using  Mocha test runner and also using the page object
-    - 
+    - In Mocha there is a describe function which holds a suite of tests
+    - Nightwatch already has its own built in test runner but there are reasons for using Mocha
+        - There is the very familiar syntax
+        - Mocha supports dynamic test creation so tests can be created dynamically alongside dynamic data assertion
+
+Debugging
+    - Nightwatch gives the .pause() method to help when we need to debug tests
+    - The pause() method suspends the test for a given number of milliseconds 
+    - If unspecified how long a test is to pause for, then the test will suspend indefinitely 
+
+Reporting
+    - By default Nightwatch has 2 reporters available
+        - stdout which is what appears in the terminal
+        - JUnit which has XML output
+    - There is also the option to create a custom reporter
+    - A custom reporter can be created by using the keyword reporter in globals file
+        - This reporter has two arguments: results and the done callback
+        - The results object has all the information that Nightwatch has gathered from our tests
+        - This information can be used to either store the data or parse the data to be used by another system
+!!  - Node has a built in FS module which can be used to write to a file
+    -
