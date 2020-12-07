@@ -9,11 +9,11 @@ module.exports = {
             .verify.urlContains('/?s');
         
         // Blog format has completely changed so test will not work
-        // SearchPage
-        //     .getText('@postTitle', (result) => {
-        //         client.pause();
-        //         client.assert.equal(result.value, 'Appltools Bugs and Test Steps');
-        //     });
+         SearchPage
+            .getText('@postTitle', (result) => {
+                 client.pause(1000);
+                 client.assert.equal(result.value, 'Appltools Bugs and Test Steps');
+             });
     }
 
 }

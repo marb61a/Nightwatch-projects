@@ -10,6 +10,12 @@
     },
     "test_settings": {
         "default": {
+            "screenshots": {
+                "enabled": true,
+                "on_failure": true,
+				"on_error": false,
+				"path": "screenshots"
+            },
             "launch_url": "https://ultimateqa.com",
             "desiredCapabilities": {
                 "browserName": "chrome"

@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 module.exports = {
     // Executed prior to a selenium session is created
     before: (done) => {
@@ -23,5 +25,15 @@ module.exports = {
         console.log('afterEach');
         console.log(client.currentTest);
         done();
+    },
+
+    reporter: (results, done) => {
+        fs.writeFile('testresult.json', JSON.stringify(results, null, '\t'), (err) => {
+            if (err) throw err;
+
+            // The save is saved
+            console.log('report saved');
+            done();
+        });
     }
 }

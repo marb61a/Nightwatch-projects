@@ -1,0 +1,120 @@
+{
+	"passed": 1,
+	"failed": 1,
+	"errors": 1,
+	"skipped": 0,
+	"tests": 0,
+	"assertions": 2,
+	"errmessages": [
+		"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \n   {\"sessionId\":\"79061beaf1f640ec98f79f32865ceadb\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)\u001b[0m"
+	],
+	"modules": {
+		"debugging.test": {
+			"reportPrefix": "CHROME_87.0.4280.88_Windows_",
+			"assertionsCount": 2,
+			"lastError": {
+				"name": "NightwatchAssertError",
+				"message": "Error while running \"equal\" command: Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+				"showDiff": false,
+				"abortOnFailure": true,
+				"stack": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)"
+			},
+			"skipped": [],
+			"time": "8.705",
+			"completed": {
+				"Should find results when searching for 'applitools'": {
+					"time": "8.705",
+					"assertions": [
+						{
+							"message": "Testing if the URL contains \u001b[0;33m'/?s'\u001b[0m \u001b[0;90m(51ms)\u001b[0m",
+							"stackTrace": "",
+							"fullMsg": "Testing if the URL contains \u001b[0;33m'/?s'\u001b[0m \u001b[0;90m(51ms)\u001b[0m",
+							"failure": false
+						},
+						{
+							"message": "Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+							"stackTrace": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)",
+							"fullMsg": "Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+							"failure": "Expected \"Appltools Bugs and Test Steps\" but got: \"[object Object]\"",
+							"screenshots": [
+								"C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\screenshots\\debugging.test\\Should-find-results-when-searching-for-applitools_FAILED_Dec-07-2020-210022-GMT+0000-(Greenwich-Mean.png"
+							]
+						}
+					],
+					"passed": 1,
+					"errors": 1,
+					"failed": 1,
+					"skipped": 0,
+					"tests": 2,
+					"steps": [],
+					"stackTrace": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)",
+					"testcases": {
+						"Should find results when searching for 'applitools'": {
+							"time": "8.705",
+							"assertions": [
+								{
+									"message": "Testing if the URL contains \u001b[0;33m'/?s'\u001b[0m \u001b[0;90m(51ms)\u001b[0m",
+									"stackTrace": "",
+									"fullMsg": "Testing if the URL contains \u001b[0;33m'/?s'\u001b[0m \u001b[0;90m(51ms)\u001b[0m",
+									"failure": false
+								},
+								{
+									"message": "Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+									"stackTrace": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)",
+									"fullMsg": "Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+									"failure": "Expected \"Appltools Bugs and Test Steps\" but got: \"[object Object]\"",
+									"screenshots": [
+										"C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\screenshots\\debugging.test\\Should-find-results-when-searching-for-applitools_FAILED_Dec-07-2020-210022-GMT+0000-(Greenwich-Mean.png"
+									]
+								}
+							],
+							"tests": 2,
+							"passed": 1,
+							"errors": 1,
+							"failed": 1,
+							"skipped": 0,
+							"steps": [],
+							"stackTrace": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)",
+							"lastError": {
+								"name": "NightwatchAssertError",
+								"message": "Error while running \"equal\" command: Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+								"showDiff": false,
+								"abortOnFailure": true,
+								"stack": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)"
+							},
+							"timeMs": 8705
+						}
+					},
+					"lastError": {
+						"name": "NightwatchAssertError",
+						"message": "Error while running \"equal\" command: Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+						"showDiff": false,
+						"abortOnFailure": true,
+						"stack": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)"
+					},
+					"timeMs": 8705
+				}
+			},
+			"errmessages": [
+				"\u001b[0;31m  NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \n   {\"sessionId\":\"79061beaf1f640ec98f79f32865ceadb\",\"status\":0,\"value\":[]}\u001b[0m\n\u001b[0;90m       at processTicksAndRejections (internal/process/task_queues.js:97:5)\u001b[0m"
+			],
+			"testsCount": 1,
+			"skippedCount": 0,
+			"failedCount": 1,
+			"errorsCount": 1,
+			"passedCount": 1,
+			"group": "",
+			"modulePath": "C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js",
+			"tests": 1,
+			"failures": 1,
+			"errors": 1
+		}
+	},
+	"lastError": {
+		"name": "NightwatchAssertError",
+		"message": "Error while running \"equal\" command: Failed [equal]: ({\n  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    at GetText.noSuchElementError (C:\\\\Users\\\\marb6\\\\OneDrive\\\\Documents\\\\NightwatchProjects\\\\nightwatch-tutorial\\\\node_modules\\\\nightwatch\\\\lib\\\\element\\\\command.js:399:12)\\n' +\n    '    a... == 'Appltools Bugs and Test Steps') - expected \u001b[0;32m\"Appltools Bugs and Test Steps\"\u001b[0m but got: \u001b[0;31m\"[object Object]\"\u001b[0m \u001b[0;90m(1002ms)\u001b[0m",
+		"showDiff": false,
+		"abortOnFailure": true,
+		"stack": "  error: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  message: 'An error occurred while running .getText() command on <Element [name=@postTitle]>: ',\n  stack: 'NoSuchElementError: An error occurred while running .getText() command on <Element [name=@postTitle]>: \\n' +\n    '    a... == 'Appltools Bugs and Test Steps'\n    at NightwatchAPI.<anonymous> (C:\\Users\\marb6\\OneDrive\\Documents\\NightwatchProjects\\nightwatch-tutorial\\tests\\debugging.test.js:15:32)"
+	}
+}
