@@ -1,5 +1,5 @@
 const elements = {
-    post: 'article'
+    postTitle: '#post-6917 h2'
 };
 
 const commands = [
